@@ -7,27 +7,37 @@
         <title>DSE Math</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm [Your Name], a student studying actuarial science. I have a passion for mathematics, programming, and Japanese culture.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Actuarial Science</li>
+                <li>Python Programming</li>
+                <li>YAML Configuration</li>
+                <li>Japanese Language</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </section>
         <div class="container">
-            <h1>File Sharing</h1>
-            <input type="file" id="fileInput" multiple>
-            <button onclick="uploadFiles()">Upload</button>
-            <div class="file-list" id="fileList"></div>
+            <h1>Download PDF Files</h1>
+            <a href="path/to/yourfile1.pdf" download class="download-link">Download PDF 1</a>
+            <a href="path/to/yourfile2.pdf" download class="download-link">Download PDF 2</a>
+            <a href="path/to/yourfile3.pdf" download class="download-link">Download PDF 3</a>
         </div>
-
-        <script>
-            function uploadFiles() {
-                const fileInput = document.getElementById('fileInput');
-                const fileList = document.getElementById('fileList');
-                fileList.innerHTML = '';
-
-                Array.from(fileInput.files).forEach(file => {
-                    const fileItem = document.createElement('div');
-                    fileItem.className = 'file-item';
-                    fileItem.textContent = file.name;
-                    fileList.appendChild(fileItem);
-                });
-            }
-        </script>
     </body>
 </html>
