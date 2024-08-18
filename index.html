@@ -8,9 +8,26 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Hello World</h1>
-        <p>paragraph</p>
-        <h2>2</h2>
-        <h3>3</h3>
+        <div class="container">
+            <h1>File Sharing</h1>
+            <input type="file" id="fileInput" multiple>
+            <button onclick="uploadFiles()">Upload</button>
+            <div class="file-list" id="fileList"></div>
+        </div>
+
+        <script>
+            function uploadFiles() {
+                const fileInput = document.getElementById('fileInput');
+                const fileList = document.getElementById('fileList');
+                fileList.innerHTML = '';
+
+                Array.from(fileInput.files).forEach(file => {
+                    const fileItem = document.createElement('div');
+                    fileItem.className = 'file-item';
+                    fileItem.textContent = file.name;
+                    fileList.appendChild(fileItem);
+                });
+            }
+        </script>
     </body>
 </html>
