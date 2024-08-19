@@ -41,7 +41,11 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+h1 {
+    text-align: center;
+} 
+
+h2 {
     font-weight: 600;
 }
 
@@ -54,4 +58,28 @@ footer {
     width: 100%;
     bottom: 0;
     white-space: pre-line;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: hsl(0, 0%, 10);
+}
+
+.navbar li{
+    float: left;
 }
