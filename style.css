@@ -27,7 +27,7 @@ nav ul {
     overflow: hidden;
 }
 
-.navbar a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -35,11 +35,11 @@ nav ul {
     text-align: center;
 }
 
-.navbar a:hover {
+nav a:hover {
     background-color: hsl(0, 0%, 10%);
 }
 
-.navbar li{
+nav li{
     float: left;
 }
 
@@ -54,9 +54,4 @@ footer {
     bottom: 0px;
     height: 15%;
     white-space: pre-line;
-}
-
-#map {
-    height: 400px;
-    width:  600px;
 }
