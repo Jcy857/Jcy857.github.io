@@ -32,7 +32,7 @@ body {
     width: 100%-20px;
     height: 10%;
     white-space: pre-line;
-    background-color: rgba(64, 147, 224, 0.838);
+    background-color: rgb(111, 214, 248);
 }
 
 /******************Navigation bar********************/
@@ -53,7 +53,7 @@ nav ul li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
 }
 
@@ -87,6 +87,10 @@ nav ul li.dropdown{
     display: block;
 }
 /******************Navigation bar********************/
+
+.index_body{
+    background-color: black;
+}
 
 /*********************Footer*************************/
 footer {
