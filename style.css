@@ -19,16 +19,19 @@ body {
 
 .pastpaper_main {
     white-space: nowrap;
+    padding-bottom: 30px;
+    padding-left: 20px;
 }
 
-main {
-    margin: 20px;
-    white-space: pre-line;
-}
 
-.content {
+.top_bar {
     text-align: left;
-    padding: 20px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    width: 100%-20px;
+    height: 10%;
+    white-space: pre-line;
     background-color: rgba(64, 147, 224, 0.838);
 }
 
