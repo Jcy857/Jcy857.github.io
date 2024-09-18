@@ -18,7 +18,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">主頁</a></li>
-                <li><a href="about.html">關於</a></li>
+                <li><a href="MC.html">MC 答案</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Past Paper 下載</a>
                     <div class="dropdown_content">
@@ -40,14 +40,29 @@
         </nav>
 
         <main>
-            <div class="about_content">
-                <ul>
-                    <li>香港大學 理學士(精算)</li>
-                    <li>在2022年 DSE 數學科取得 5*, 數學延伸部份(二) 取得5**</li>
-                    <li>2 年教學經驗</li>
-                    <li>教授數學科及數學延伸部份(二)</li>
-                </ul>
+            <div class="container">
+                <br>
+                <label for="fname">年份:</label>
+                <input type="text" id="searchInputX" placeholder="輸入年份">
+                <br>
+                <br>
+                <label for="fname">題號:</label>
+                <input type="text" id="searchInputY" placeholder="輸入題號">
+                <br>
+                <br>
+                <button onclick="searchCSV()">搜索</button>
+                <table id="resultTable">
+                    <thead>
+                        <tr>
+                            <!-- 表頭會動態生成 -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 搜索結果會動態生成 -->
+                    </tbody>   
+                </table>         
             </div>
+            <script src="script.js"></script>
         </main>
 
         <footer>
