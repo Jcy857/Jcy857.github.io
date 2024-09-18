@@ -97,6 +97,22 @@ nav ul li.dropdown{
     background-color: black;
 }
 
+.container{
+    font-size: 22px;
+}
+
+.large_input{
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.large_button{
+    margin-left: 55px;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+}
 
 /*********************Footer*************************/
 footer {

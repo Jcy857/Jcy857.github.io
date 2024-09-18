@@ -43,22 +43,18 @@
             <div class="container">
                 <br>
                 <label for="fname">年份:</label>
-                <input type="text" id="searchInputX" placeholder="輸入年份">
+                <input type="number" id="searchInputX" placeholder="輸入年份" class="large_input">
                 <br>
                 <br>
                 <label for="fname">題號:</label>
-                <input type="text" id="searchInputY" placeholder="輸入題號">
+                <input type="number" id="searchInputY" placeholder="輸入題號" class="large_input">
                 <br>
                 <br>
-                <button onclick="searchCSV()">搜索</button>
+                <button onclick="searchCSV()" class="large_button">搜索</button>
+                <br>
+                <br>
                 <table id="resultTable">
-                    <thead>
-                        <tr>
-                            <!-- 表頭會動態生成 -->
-                        </tr>
-                    </thead>
                     <tbody>
-                        <!-- 搜索結果會動態生成 -->
                     </tbody>   
                 </table>         
             </div>
