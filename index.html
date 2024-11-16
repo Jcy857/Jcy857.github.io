@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body class="index_body">
+    <body>
 
         <div class="top_bar">
             逸文教育中心
@@ -38,6 +38,28 @@
                 <li><a href="venue.html">地點</a></li>
             </ul>
         </nav>
+
+        <main>
+            <div class="container">
+                <br>
+                <label for="fname">年份:</label>
+                <input type="number" id="searchInputX" placeholder="輸入年份" class="large_input">
+                <br>
+                <br>
+                <label for="fname">題號:</label>
+                <input type="number" id="searchInputY" placeholder="輸入題號" class="large_input">
+                <br>
+                <br>
+                <button onclick="searchCSV()" class="large_button">搜索</button>
+                <br>
+                <br>
+                <table id="resultTable">
+                    <tbody>
+                    </tbody>   
+                </table>         
+            </div>
+            <script src="script.js"></script>
+        </main>
 
         <!--
         <video width="100%" 

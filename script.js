@@ -31,7 +31,7 @@ function searchCSV() {
         exam_type = "HKDSE"
     }
 
-    if (["A", "B", "C", "D"].includes(output)){
+    if (["A", "B", "C", "D", "E"].includes(output)){
         tbody.innerHTML = '<tr><td colspan="100%">'+ exam_type + " " + year + "年第" + question + "題答案: " + output + "</td></tr>";
     } else {
         tbody.innerHTML = '<tr><td colspan="100%">沒有找到匹配的結果</td></tr>';
