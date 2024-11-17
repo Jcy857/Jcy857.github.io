@@ -102,20 +102,35 @@ nav ul li.dropdown{
 /*}*/
 
 .container{
+    margin-left: 10px;
     font-size: 22px;
 }
 
 .large_input{
+    margin-left: 10px;
     width: 300px;
     height: 40px;
     font-size: 18px;
 }
 
+.medium_input{
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+}
+
 .large_button{
-    margin-left: 55px;
+    margin-left: 65px;
     width: 200px;
     height: 40px;
     font-size: 18px;
+}
+
+.medium_button{
+    margin-left: 40px;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
 }
 
 .ans_box{
@@ -136,7 +151,7 @@ main {
 }
 
 .button-container { 
-    position: absolute; 
+    position: absolute;
     right: 20px; 
     top: 20px; 
 }

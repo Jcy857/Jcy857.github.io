@@ -16,7 +16,7 @@ function parseCSV(text) {
 }
 
 function getColumn(data, colIndex) {
-     return data.map(row => row[colIndex]); 
+    return data.map(row => row[colIndex]); 
 }
 
 function searchCSV() {
@@ -45,6 +45,14 @@ function searchCSV() {
 
 function check_answer() {
     const year = document.getElementById('searchInputX').value;
+    
+    // Check if the year is within the supported range 
+    if (year < 2012 || year > 2024) {
+        alert(`The year entered "${year}" is not supported. Please enter a year between 2012 and 2024.`);
+        return;
+    }    
+    
+    
     const answers = [];
     const forms = document.querySelectorAll('.ans_box');
     forms.forEach((form, index) => {
@@ -70,9 +78,9 @@ function check_answer() {
     correct_pc = number_of_correct_answer / 45 * 100;
     incorrect_pc = number_of_wrong_answer / 45 * 100;
     alert(`
-        Correct answers: ${number_of_correct_answer}/45\n
-        Incorrect answers: ${number_of_wrong_answer}/45\n
-        Correct percentage: ${correct_pc.toFixed(2)}%\n
+        Correct        : ${number_of_correct_answer}/45\n
+        Incorrect     : ${number_of_wrong_answer}/45\n
+        Correct %   : ${correct_pc.toFixed(2)}%\n
     `);
 }
 
