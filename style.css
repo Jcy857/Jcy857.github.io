@@ -114,7 +114,7 @@ nav ul li.dropdown{
 }
 
 .medium_input{
-    width: 150px;
+    width: 100px;
     height: 30px;
     font-size: 16px;
 }
@@ -155,6 +155,23 @@ main {
     right: 20px; 
     top: 20px; 
 }
+
+.result-container { 
+    position: absolute;
+    margin-top: 29px;
+    right: 970px; 
+    top: 20px;
+}
+
+.answer-item { 
+    margin-bottom: 23.6px; 
+}
+
+.extra-spacing { 
+    margin-top: 75px;;
+    margin-bottom: 23.6px; 
+}
+
 /*********************Footer*************************/
 footer {
     text-align: center;

@@ -82,5 +82,24 @@ function check_answer() {
         Incorrect     : ${number_of_wrong_answer}/45\n
         Correct %   : ${correct_pc.toFixed(2)}%\n
     `);
+
+    const resultContainer = document.getElementById('resultContainer');
+    resultContainer.innerHTML = '';
+    correct_answers.forEach((answer, index) => { 
+        const p = document.createElement('p'); 
+        p.textContent = `第${index + 1}題答案: ${answer}`; 
+        p.classList.add('answer-item');
+        if (index === 30) { 
+            p.classList.add('extra-spacing'); 
+        }
+        resultContainer.appendChild(p); 
+    });
+
+    const selectBoxes = document.querySelectorAll('.ans');
+    selectBoxes.forEach(selectBox => 
+        { 
+            selectBox.disabled = true; 
+        }
+    );
 }
 
