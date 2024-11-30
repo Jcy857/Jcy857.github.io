@@ -83,9 +83,9 @@ function check_answer() {
         Correct %   : ${correct_pc.toFixed(2)}%\n
     `);
 
-    const resultContainer = document.getElementById('resultContainer');
-    resultContainer.innerHTML = '';
     correct_answers.forEach((answer, index) => { 
+        const resultContainer = document.getElementById(`result${index + 1}`);
+        resultContainer.innerHTML = '';    
         const p = document.createElement('p'); 
         p.textContent = `第${index + 1}題答案: ${answer}`; 
         p.classList.add('answer-item');
@@ -102,4 +102,3 @@ function check_answer() {
         }
     );
 }
-

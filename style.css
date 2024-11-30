@@ -135,13 +135,13 @@ nav ul li.dropdown{
 
 .ans_box{
     padding-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .ans_box select{
     width: 80px;
     height: 35px;
-    text-align: center;
+    text-align: left;
 }
 
 main { 
@@ -150,26 +150,27 @@ main {
     padding: 0; 
 }
 
+.pair { 
+    display: flex; 
+    align-items: center; 
+}
+
 .button-container { 
     position: absolute;
     right: 20px; 
     top: 20px; 
 }
 
-.result-container { 
-    position: absolute;
-    margin-top: 27.5px;
-    left: 180px; 
-    top: 20px;
+.result-container {
+    display: flex; 
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 10px; 
 }
 
 .answer-item { 
-    margin-bottom: 23.6px; 
-}
-
-.extra-spacing { 
-    margin-top: 75px;;
-    margin-bottom: 23.6px; 
+    margin-bottom: 23.6px;
+    flex: 1 
 }
 
 /*********************Footer*************************/
