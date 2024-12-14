@@ -157,8 +157,16 @@ main {
 
 .button-container { 
     position: absolute;
+    align-items: center;
     right: 20px; 
     top: 20px; 
+}
+
+.button-container2 { 
+    position: absolute;
+    align-items: center;
+    right: 30px; 
+    top: 150px; 
 }
 
 .result-container {
