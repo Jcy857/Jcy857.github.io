@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatiable" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DSE Math</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -15,28 +16,33 @@
             Jat Man Education Centre
         </div>         
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">主頁</a></li>
-                <li><a href="MC.html">MC 答案</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Past Paper 下載</a>
-                    <div class="dropdown_content">
-                        <a href="M0.html">數學</a>
-                        <a href="M1.html">M1</a>
-                        <a href="M2.html">M2</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">數學 Notes</a>
-                    <div class="dropdown_content">
-                        <a href="Notes_M0.html">數學</a>
-                        <a href="Notes_M1.html">M1</a>
-                        <a href="Notes_M2.html">M2</a>
-                    </div>
-                </li>
-                <li><a href="venue.html">地點</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">主頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MC.html">MC 答案</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pastPaperDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Paper 下載</a>
+                        <div class="dropdown-menu" aria-labelledby="pastPaperDropdown">
+                            <a class="dropdown-item" href="M0.html">數學</a>
+                            <a class="dropdown-item" href="M1.html">M1</a>
+                            <a class="dropdown-item" href="M2.html">M2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="mathNotesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">數學 Notes</a>
+                        <div class="dropdown-menu" aria-labelledby="mathNotesDropdown">
+                            <a class="dropdown-item" href="Notes_M0.html">數學</a>
+                            <a class="dropdown-item" href="Notes_M1.html">M1</a>
+                            <a class="dropdown-item" href="Notes_M2.html">M2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="venue.html">地點</a></li>
+                </ul>
+            </div>
         </nav>
 
         <main class="pastpaper_main">
@@ -94,7 +100,9 @@
                     — Leonhard Euler
             </small>
         </footer>
-
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
 
