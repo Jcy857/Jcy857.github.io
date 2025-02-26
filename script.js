@@ -88,6 +88,11 @@ function check_answer() {
         resultContainer.innerHTML = '';    
         const p = document.createElement('p'); 
         p.textContent = `第${index + 1}題答案: ${answer}`; 
+        if (answers[index] != correct_answers[index]) {
+            p.style.color = 'red';
+        } else {
+            p.style.color = 'green';
+        }
         p.classList.add('answer-item');
         if (index === 30) { 
             p.classList.add('extra-spacing'); 
