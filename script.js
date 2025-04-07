@@ -47,8 +47,8 @@ function check_answer() {
     const year = document.getElementById('searchInputX').value;
     
     // Check if the year is within the supported range 
-    if (year < 2012 || year > 2024) {
-        alert(`The year entered "${year}" is not supported. Please enter a year between 2012 and 2024.`);
+    if (year < 2012 || year > 2025) {
+        alert(`The year entered "${year}" is not supported. Please enter a year between 2012 and 2025.`);
         return;
     }    
     
