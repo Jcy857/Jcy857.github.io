@@ -1,7 +1,7 @@
 let csvData = [];
 
 // Load csv
-fetch('data.csv')
+fetch('assets/data.csv')
     .then(response => response.text())
     .then(text => {
         csvData = parseCSV(text);

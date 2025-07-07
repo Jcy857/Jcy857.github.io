@@ -7,76 +7,130 @@
         <title>DSE Math</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
     </head>
 
     <body>
-
         <div class="top_bar">
             逸文教育中心
             Jat Man Education Centre
         </div>         
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">主頁</a></li>
-                    <li class="nav-item"><a class="nav-link" href="MC.html">MC 答案</a></li>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto d-flex">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pastPaperDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Paper 下載</a>
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="mcSolutionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MC Solution</a>
+                        <div class="dropdown-menu" aria-labelledby="mcSolutionDropdown">
+                            <a class="dropdown-item" href="search.html">Quick Search</a>
+                            <a class="dropdown-item" href="MC.html">By year</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pastPaperDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Paper</a>
                         <div class="dropdown-menu" aria-labelledby="pastPaperDropdown">
-                            <a class="dropdown-item" href="M0.html">數學</a>
+                            <a class="dropdown-item" href="M0.html">Core</a>
                             <a class="dropdown-item" href="M1.html">M1</a>
                             <a class="dropdown-item" href="M2.html">M2</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="mathNotesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">數學 Notes</a>
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="mathNotesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notes</a>
                         <div class="dropdown-menu" aria-labelledby="mathNotesDropdown">
-                            <a class="dropdown-item" href="Notes_M0.html">數學</a>
+                            <a class="dropdown-item" href="Notes_M0.html">Core</a>
                             <a class="dropdown-item" href="Notes_M1.html">M1</a>
                             <a class="dropdown-item" href="Notes_M2.html">M2</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="venue.html">地點</a></li>
+                    <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
                 </ul>
             </div>
         </nav>
 
         <main>
-            <div class="container">
-                <br>
-                <label for="fname">年份:</label>
-                <input type="number" id="searchInputX" placeholder="輸入年份" class="large_input">
-                <br>
-                <br>
-                <label for="fname">題號:</label>
-                <input type="number" id="searchInputY" placeholder="輸入題號" class="large_input">
-                <br>
-                <br>
-                <button onclick="searchCSV()" class="large_button">搜索</button>
-                <br>
-                <br>
-                <table id="resultTable">
-                    <tbody>
-                    </tbody>   
-                </table>         
-            </div>
-            <script src="script.js"></script>
+            <section class="hidden">
+                <video width="50%" height="100" autoplay="true" muted="muted" loop="loop" class="img-fluid">
+                    <source src="assets/Demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="content">
+                    <h2>What you can learn here:</h2><br>
+                    Calculus, <br>
+                    Linear Algebra, <br>
+                    Statistics and Probability, <br>
+                    Exam skills <br>
+                    Calculators skills
+                </div>
+            </section>
+
+            <section class="hidden">
+                <div class="content">
+                    <h2>DSE Resources:</h2><br>
+                    DSE Compulsory Mathematics <br>
+                    Mathematics Extended Module 1 (M1) <br> 
+                    Mathematics Extended Module 2 (M2) <br>
+                    Past paper questions and solutions. <br>
+                    Question bank and Mock exam papers. <br>
+                    Personal notes
+                </div>
+                <div class="logos"> 
+                    <div class="logo-hidden">
+                        <a href="Notes_M0.html">
+                            <img src="assets/M0.png" height="150" width="auto">
+                        </a>
+                    </div>
+                    <div class="logo-hidden">
+                        <a href="Notes_M1.html">
+                            <img src="assets/M1.png" height="150" width="auto">
+                        </a>
+                    </div>
+                    <div class="logo-hidden">
+                        <a href="Notes_M2.html">
+                            <img src="assets/M2.png" height="150" width="auto">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="hidden">
+                <img src="assets/hkeaa.png" class="img-fluid" alt="Linear Algebra" height="300" width="30%" style="filter: brightness(170%);">
+                <div class="content">
+                    <h2>Past Public Exam Results:</h2><br>
+                    <div class="timeline">
+                      <div class="timeline-item">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-content left">
+                          <h3>2022 DSE</h3>
+                          <p>
+                              Core Math 5*<br>
+                              M2 5**
+                          </p>
+                        </div>
+                      </div>
+                      <div class="timeline-item">
+                        <div class="timeline-circle"></div>
+                        <div class="timeline-content right">
+                          <h3>2025 DSE</h3>
+                          <p>
+                              Core Math 5*<br>
+                              M1 5**
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <!--
-        <video width="100%" 
-                height="400px" 
-                autoplay
-                muted
-                loop>
-            <source src="Demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

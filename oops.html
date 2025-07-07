@@ -16,33 +16,43 @@
         </div> 
            
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">主頁</a></li>
-                    <li class="nav-item"><a class="nav-link" href="MC.html">MC 答案</a></li>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto d-flex">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pastPaperDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Paper 下載</a>
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="mcSolutionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MC Solution</a>
+                        <div class="dropdown-menu" aria-labelledby="mcSolutionDropdown">
+                            <a class="dropdown-item" href="search.html">Quick Search</a>
+                            <a class="dropdown-item" href="MC.html">By year</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pastPaperDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Past Paper</a>
                         <div class="dropdown-menu" aria-labelledby="pastPaperDropdown">
-                            <a class="dropdown-item" href="M0.html">數學</a>
+                            <a class="dropdown-item" href="M0.html">Core</a>
                             <a class="dropdown-item" href="M1.html">M1</a>
                             <a class="dropdown-item" href="M2.html">M2</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="mathNotesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">數學 Notes</a>
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="mathNotesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Notes</a>
                         <div class="dropdown-menu" aria-labelledby="mathNotesDropdown">
-                            <a class="dropdown-item" href="Notes_M0.html">數學</a>
+                            <a class="dropdown-item" href="Notes_M0.html">Core</a>
                             <a class="dropdown-item" href="Notes_M1.html">M1</a>
                             <a class="dropdown-item" href="Notes_M2.html">M2</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="venue.html">地點</a></li>
+                    <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
                 </ul>
             </div>
         </nav>
+
         <main>
             <h1>
                 File Not Found.

@@ -72,24 +72,34 @@ body::before {
 
 /******************Navigation bar********************/
 .navbar .navbar-nav .nav-link {
-    position: relative; /* Needed for the pseudo-element */
+    position: relative;
     color: white; /* Keep the color white */
 }
 
 .navbar .navbar-toggler {
+    position: relative;
     border-color: white; /* Change the border color of the toggler */
 }
 
 .navbar .navbar-toggler .navbar-toggler-icon {
+    align-items: left;
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Change the color of the hamburger icon */
 }
 
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
 .dropdown-menu {
+    text-align: left; /* Align text to the left */
+    position: relative; /* Ensure the dropdown menu is positioned relative to the navbar */
     background-color: #343a40; /* Change the background color of the dropdown menu */
     min-width: auto; /* Change the minimum width of the dropdown menu */
 }
 
 .dropdown-item {
+    text-align: left; /* Align text to the left */
+    position: relative;
     color: rgba(255, 255, 255, 1); /* Change the color of the dropdown items */
 }
 
@@ -97,9 +107,79 @@ body::before {
     background-color: rgba(74, 73, 81, 0.8); /* Change the background color on hover */
     color: white; /* Change the color on hover */
 }
+
 /******************Navigation bar********************/
 
+/* Animation for the index */
+@media(prefers-reduced-motion) {
+    .hidden img, .hidden .content, .show img, .show .content {
+        transition: none; /* Disable transitions for reduced motion preference */
+    }
+}
 
+@media only screen and (max-width: 800px) {
+  .show {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .show content {
+    margin-right: auto;
+  }
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hidden .img-fluid {
+    transform: translateX(-40vw); /* Start off-screen (left) relative to viewport width */
+    transition: all 1.5s ease-in-out;
+}
+
+.show .img-fluid {
+    transform: translateX(0vw); /* Move to a position relative to viewport width */
+}
+
+.hidden .logos {
+    transform: translateX(70vw); /* Start off-screen (left) relative to viewport width */
+    transition: all 1.5s ease-in-out;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between logos */
+}
+
+.show .logos {
+    transform: translateX(0vw); /* Move to a position relative to viewport width */
+}
+
+.logo-hidden {
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-hidden:hover {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*********************************/
 .container{
     margin-left: 10px;
     font-size: 22px;
@@ -142,8 +222,7 @@ body::before {
     text-align: left;
 }
 
-main { 
-    position: relative; 
+main {  
     margin: 0; 
     padding: 0; 
 }
@@ -184,6 +263,72 @@ main {
 
 .download-link { 
    padding-right: 15px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: #fcfcfc;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-circle {
+  width: 15px;
+  height: 15px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border: 3px solid #fff;
+}
+
+.timeline-content {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 55%;
+  position: relative;
+}
+
+.timeline-content.left {
+  margin-right: 55%;
+  text-align: right;
+}
+
+.timeline-content.right {
+  margin-left: 55%;
+  text-align: left;
+}
+
+.timeline-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #666;
 }
 
 /*********************Footer*************************/

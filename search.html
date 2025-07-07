@@ -7,10 +7,11 @@
         <title>DSE Math</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
     </head>
 
     <body>
-        
+
         <div class="top_bar">
             逸文教育中心
             Jat Man Education Centre
@@ -54,64 +55,38 @@
             </div>
         </nav>
 
-        <main class="pastpaper_main">
-            <br>
-            <h2>DSE M2</h2>
-            <h3>Lesson 0</h3>
-            <div>
-                <a href="https://drive.google.com/file/d/1lw1Kty8jLzR-E643pVv5ydYZr4jvDI32/view?usp=drive_link" download class="download-link">Set Notation and Summation</a>
-            </div>   
-            <h3>Lesson 1: </h3> 
-            <div>
-                <a href="https://drive.google.com/file/d/10Z9OTAEwqVA3xu-vMEV2-RpFperEgYoo/view?usp=drive_link" download class="download-link">Mathematical Induction</a>
-            </div>   
-            <h3>Lesson 2: </h3>  
-            <div>
-                <a href="https://drive.google.com/file/d/1tIZPeXoyh7ylcKRQA_NqTKE6CXv6gBiW/view?usp=drive_link" download class="download-link">Binomial theorem</a>
-            </div>    
-            <h3>Lesson 3-4: </h3> 
-            <div>
-                <a href="https://drive.google.com/file/d/11AVPk2AUysTuRM1qO1fKn1MuCbLKutuu/view?usp=drive_link" download class="download-link">Trigonometry</a>
-            </div>   
-            <h3>Lesson 5:</h3>  
-            <div>
-                <a href="https://drive.google.com/file/d/1nBfzChCMRN0S1jUemJE7bSogs7rET6kD/view?usp=drive_link" download class="download-link">e and Limit</a>
-            </div>   
-            <h3> Lesson 6-7:</h3>  
-            <div>
-                <a href="https://drive.google.com/file/d/17VKQITcz1tJeZ57zszTbNiAYZbyCem8E/view?usp=drive_link" download class="download-link">Differentiation</a>
-            </div>  
-            <h3>Lesson 8-10:</h3>   
-            <div>
-                <a href="https://drive.google.com/file/d/13P0KKgjoUsd-QYeuPy3UVV6uDltLwZ_O/view?usp=drive_link" download class="download-link">Integration</a>
-            </div> 
-            <h3>Lesson 11: </h3>    
-            <div>
-                <a href="https://drive.google.com/file/d/1BX5ug5Zzp5foJ_hICvDCec1gz6v_rl-G/view?usp=drive_link" download class="download-link">Matrice and Determinants</a>
-            </div>   
-            <h3>Lesson 12: </h3>  
-            <div>
-                <a href="https://drive.google.com/file/d/15Mcv3XkHD2gdZY_L5uBcUbqWPeLOnZEy/view?usp=drive_link" download class="download-link">System of Linear Equations</a>
-            </div>  
-            <h3>Lesson 13-14: </h3>   
-            <div>
-                <a href="https://drive.google.com/file/d/1IijFiK9BRloeAXHIo_GC_mcnVH3zeZt6/view?usp=drive_link" download class="download-link">Vector</a>
+        <main>
+            <div class="container">
+                <br>
+                <label for="fname">年份:</label>
+                <input type="number" id="searchInputX" placeholder="輸入年份" class="large_input">
+                <br>
+                <br>
+                <label for="fname">題號:</label>
+                <input type="number" id="searchInputY" placeholder="輸入題號" class="large_input">
+                <br>
+                <br>
+                <button onclick="searchCSV()" class="large_button">搜索</button>
+                <br>
+                <br>
+                <table id="resultTable">
+                    <tbody>
+                    </tbody>   
+                </table>         
             </div>
-            <br>
-            <br>
-            <h2>Question Bank</h2>
-            <div>
-                <a href="https://drive.google.com/drive/folders/111aUVnHlvbL6GFjT_IUQDIiYc3TCZmBd?usp=drive_link">M2 Question Bank</a>
-            </div>   
-    
+            <script src="script.js"></script>
         </main>
 
-        <footer>
-            <small>
-                "Nothing takes place in the world whose meaning is not that of some maximum or minimum."
-                    — Leonhard Euler
-            </small>
-        </footer>
+        <!--
+        <video width="100%" 
+                height="400px" 
+                autoplay
+                muted
+                loop>
+            <source src="Demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
