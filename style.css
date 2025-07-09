@@ -123,9 +123,6 @@ body::before {
     align-items: center;
     justify-content: space-evenly;
   }
-  .show content {
-    margin-right: auto;
-  }
 }
 
 section{
