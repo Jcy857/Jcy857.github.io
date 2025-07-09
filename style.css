@@ -120,6 +120,8 @@ body::before {
 @media only screen and (max-width: 800px) {
   .show {
     flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
 }
 
