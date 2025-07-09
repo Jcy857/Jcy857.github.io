@@ -123,6 +123,9 @@ body::before {
     margin: 0;
     padding: 0;
   }
+  .hidden .logos{
+    transition: none;
+  }
 }
 
 section{
