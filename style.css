@@ -152,7 +152,7 @@ section{
 }
 
 .hidden .logos {
-    transform: translateX(70vw); /* Start off-screen (left) relative to viewport width */
+    transform: translateX(40vw); /* Start off-screen (left) relative to viewport width */
     transition: all 1.5s ease-in-out;
 }
 
