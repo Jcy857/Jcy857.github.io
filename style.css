@@ -233,7 +233,7 @@ main {
     position: absolute;
     align-items: center;
     right: 20px; 
-    top: 20px; 
+    top: 150px; 
 }
 
 .button-container2 { 
@@ -243,7 +243,7 @@ main {
     flex-direction: column;
     gap: 10px;
     right: 20px; 
-    top: 60px; 
+    top: 200px; 
 }
 
 .result-container {
