@@ -62,10 +62,10 @@ body::before {
     text-align: left;
     margin: 0px;
     padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 10px;
     width: 100%-20px;
     height: 10%;
-    white-space: pre-line;
     color: black;
     background-color: rgb(118, 216, 249);
 }
