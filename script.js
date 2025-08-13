@@ -49,6 +49,8 @@ function check_answer() {
     // Check if the year is within the supported range 
     if (year < 2012 || year > 2025) {
         alert(`The year entered "${year}" is not supported. Please enter a year between 2012 and 2025.`);
+        const InputElement = document.getElementById('searchInputX');
+        InputElement.focus();
         return;
     }    
     
@@ -87,7 +89,7 @@ function check_answer() {
         const resultContainer = document.getElementById(`result${index + 1}`);
         resultContainer.innerHTML = '';    
         const p = document.createElement('p'); 
-        p.textContent = `第${index + 1}題答案: ${answer}`; 
+        p.textContent = `答案: ${answer}`; 
         if (answers[index] != correct_answers[index]) {
             p.style.color = 'red';
         } else {
@@ -106,4 +108,11 @@ function check_answer() {
             selectBox.disabled = true; 
         }
     );
+    window.scrollTo(0, 0);
+}
+
+function confirmReset() {
+  if (confirm('確定要重置頁面嗎？')) {
+    location.reload();
+  }
 }

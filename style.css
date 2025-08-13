@@ -48,15 +48,15 @@ body::before {
     padding-left: 20px;
 }
 
-.container_MC{
-    margin-left: 20px;
-}
-
 .about_content{
     white-space: nowrap;
     line-height: 50px;
 }
 
+.main {  
+    margin: 0; 
+    padding: 0; 
+}
 
 .top_bar {
     text-align: left;
@@ -110,7 +110,92 @@ body::before {
 
 /******************Navigation bar********************/
 
-/* Animation for the index */
+.container{
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.large_input{
+    margin-left: 10px;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.medium_input{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.large_button{
+    margin-left: 65px;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.medium_button{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.download-link { 
+   padding-right: 15px;
+}
+
+/***********************MC**************************/
+.container_MC{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ans_box{
+    margin-bottom: 20px;
+}
+
+.ans_box select{
+    width: 80px;
+    height: 35px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.pair { 
+    display: flex; 
+    align-items: center; 
+}
+
+.answer-item { 
+    margin-bottom: 23.6px;
+    flex: 1 
+}
+
+.year_input {
+    margin-top: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit_button {
+    margin-left: 20px;
+}
+/***********************MC**************************/
+
+/*********************Index*************************/
 @media(prefers-reduced-motion) {
     .hidden img, .hidden .content, .show img, .show .content {
         transition: none; /* Disable transitions for reduced motion preference */
@@ -179,92 +264,6 @@ section{
     transition: transform 0.3s ease-in-out;
 }
 
-/*********************************/
-.container{
-    margin-left: 10px;
-    font-size: 22px;
-}
-
-.large_input{
-    margin-left: 10px;
-    width: 300px;
-    height: 40px;
-    font-size: 18px;
-}
-
-.medium_input{
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-}
-
-.large_button{
-    margin-left: 65px;
-    width: 200px;
-    height: 40px;
-    font-size: 18px;
-}
-
-.medium_button{
-    margin-left: 40px;
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-}
-
-.ans_box{
-    margin-bottom: 20px;
-}
-
-.ans_box select{
-    width: 80px;
-    height: 35px;
-    text-align: left;
-}
-
-main {  
-    margin: 0; 
-    padding: 0; 
-}
-
-.pair { 
-    display: flex; 
-    align-items: center; 
-}
-
-.button-container { 
-    position: absolute;
-    align-items: center;
-    right: 20px; 
-    top: 150px; 
-}
-
-.button-container2 { 
-    position: absolute;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    right: 20px; 
-    top: 200px; 
-}
-
-.result-container {
-    display: flex; 
-    align-items: center;
-    margin-left: 15px;
-    font-size: 17px;
-}
-
-.answer-item { 
-    margin-bottom: 23.6px;
-    flex: 1 
-}
-
-.download-link { 
-   padding-right: 15px;
-}
-
 .timeline {
   position: relative;
   max-width: 340px;
@@ -330,6 +329,7 @@ main {
   margin: 0;
   color: #666;
 }
+/*********************Index*************************/
 
 /*********************Footer*************************/
 footer {
