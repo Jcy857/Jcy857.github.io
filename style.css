@@ -340,5 +340,6 @@ footer {
     height: 100px;
     white-space: pre-line;
     margin-top: auto;
+    margin-bottom: 0;
 }
 /**********************Footer***********************/
