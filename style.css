@@ -203,26 +203,26 @@ body::before {
 }
 
 @media only screen and (max-width: 800px) {
-  .show {
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  .hidden .logos{
-    transition: none;
-  }
+    .show {
+        flex-direction: column;
+        opacity: 1;
+    }
+    .hidden {
+        flex-direction: column;
+        opacity: 0;
+    }
 }
 
 section{
-    display: grid;
+    display: flex;
     place-items: center;
-    align-content: center;
     min-height: 100vh;
+    overflow: hidden;
+    gap: 20px;
 }
 
 .hidden {
     opacity: 0;
-    display: flex;
     justify-content: space-evenly;
 }
 
@@ -239,15 +239,15 @@ section{
     transform: translateX(0vw); /* Move to a position relative to viewport width */
 }
 
-.hidden .logos {
-    transform: translateX(40vw); /* Start off-screen (left) relative to viewport width */
-    transition: all 1.5s ease-in-out;
-}
-
 .logos {
     display: flex;
     justify-content: center;
     gap: 40px; /* Space between logos */
+}
+
+.hidden .logos {
+    transform: translateX(40vw); /* Start off-screen (right) relative to viewport width */
+    transition: all 1.5s ease-in-out;
 }
 
 .show .logos {
@@ -311,12 +311,12 @@ section{
 
 .timeline-content.left {
   margin-right: 55%;
-  text-align: right;
+  text-align: center;
 }
 
 .timeline-content.right {
   margin-left: 55%;
-  text-align: left;
+  text-align: center;
 }
 
 .timeline-content h3 {
