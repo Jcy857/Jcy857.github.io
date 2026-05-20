@@ -20,26 +20,26 @@ h3 {
 
 body {
     position: relative;
-    background-color: rgba(41, 45, 45, .9); /* Dark color with transparency */
+    background-color: rgba(41, 45, 45, .9);
     color: white;
     margin: 0px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
 body::before {
     content: '';
-    position: fixed; /* Use fixed position instead of absolute */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: inherit; /* Use the same background color with transparency */
-    filter: blur(10px); /* Apply Gaussian blur */
-    z-index: -1; /* Ensure the pseudo-element is behind the body content */
-    pointer-events: none; /* Ensure the pseudo-element doesn't capture any events */
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+    pointer-events: none;
 }
 
 .pastpaper_main {
@@ -73,12 +73,12 @@ body::before {
 /******************Navigation bar********************/
 .navbar .navbar-nav .nav-link {
     position: relative;
-    color: white; /* Keep the color white */
+    color: white;
 }
 
 .navbar .navbar-toggler {
     position: relative;
-    border-color: white; /* Change the border color of the toggler */
+    border-color: white;
 }
 
 .navbar .navbar-toggler .navbar-toggler-icon {
@@ -91,21 +91,21 @@ body::before {
 }
 
 .dropdown-menu {
-    text-align: left; /* Align text to the left */
-    position: relative; /* Ensure the dropdown menu is positioned relative to the navbar */
-    background-color: #343a40; /* Change the background color of the dropdown menu */
-    min-width: auto; /* Change the minimum width of the dropdown menu */
+    text-align: left;
+    position: relative;
+    background-color: #343a40;
+    min-width: auto;
 }
 
 .dropdown-item {
-    text-align: left; /* Align text to the left */
+    text-align: left;
     position: relative;
-    color: rgba(255, 255, 255, 1); /* Change the color of the dropdown items */
+    color: rgba(255, 255, 255, 1);
 }
 
 .dropdown-item:hover {
-    background-color: rgba(74, 73, 81, 0.8); /* Change the background color on hover */
-    color: white; /* Change the color on hover */
+    background-color: rgba(74, 73, 81, 0.8);
+    color: white;
 }
 
 /******************Navigation bar********************/
@@ -198,7 +198,7 @@ body::before {
 /*********************Index*************************/
 @media(prefers-reduced-motion) {
     .hidden img, .hidden .content, .show img, .show .content {
-        transition: none; /* Disable transitions for reduced motion preference */
+        transition: none;
     }
 }
 
@@ -231,27 +231,27 @@ section{
 }
 
 .hidden .img-fluid {
-    transform: translateX(-40vw); /* Start off-screen (left) relative to viewport width */
+    transform: translateX(-40vw);
     transition: all 1.5s ease-in-out;
 }
 
 .show .img-fluid {
-    transform: translateX(0vw); /* Move to a position relative to viewport width */
+    transform: translateX(0vw);
 }
 
 .logos {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Space between logos */
+    gap: 40px;
 }
 
 .hidden .logos {
-    transform: translateX(40vw); /* Start off-screen (right) relative to viewport width */
+    transform: translateX(40vw);
     transition: all 1.5s ease-in-out;
 }
 
 .show .logos {
-    transform: translateX(0vw); /* Move to a position relative to viewport width */
+    transform: translateX(0vw);
 }
 
 .logo-hidden {
