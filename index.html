@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatiable" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DSE Math</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
@@ -12,12 +12,11 @@
 
     <body>
         <div class="top_bar">
-            <a href="index.html" style = "color: black; text-decoration: none;">
+            <a href="index.html">
                 逸文教育中心<br>
                 Jat Man Education Centre
             </a>
-        </div>    
-
+        </div>
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,62 +49,96 @@
                             <a class="dropdown-item" href="Notes_M2.html">M2</a>
                         </div>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="countdown.html">Countdown</a></li>
                     <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
                 </ul>
             </div>
         </nav>
 
         <main>
-            <section class="hidden">
-                <video width="75%" height="100" autoplay="true" muted="muted" loop="loop" class="img-fluid" playsinline>
-                    <source src="assets/demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <section class="hero hidden">
+                <div class="hero-media">
+                    <video autoplay muted loop playsinline class="img-fluid">
+                        <source src="assets/demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
-                <div class="content">
-                    <h2>What you can learn here:</h2><br>
-                    Calculus, <br>
-                    Linear Algebra, <br>
-                    Statistics and Probability, <br>
-                    Exam skills <br>
-                    Calculators skills
+                <div class="hero-copy content">
+                    <p class="eyebrow">HKDSE Mathematics</p>
+                    <p class="lede">Core, M1 and M2 notes, past papers, and multiple-choice checkers — built for the morning the Compulsory Part begins.</p>
+                    <div class="hero-actions">
+                        <a class="btn-primary" href="countdown.html">5-year exam countdown</a>
+                        <a class="btn-ghost" href="M0.html">Browse past papers</a>
+                    </div>
                 </div>
             </section>
 
-            <section class="hidden">
+            <section class="home-panel hidden">
                 <div class="content">
-                    <h2>DSE Resources:</h2><br>
-                    DSE Compulsory Mathematics <br>
-                    Mathematics Extended Module 1 (M1) <br> 
-                    Mathematics Extended Module 2 (M2) <br>
-                    Past paper questions and solutions. <br>
-                    Question bank and Mock exam papers. <br>
-                    Personal notes
+                    <p class="section-kicker">Curriculum</p>
+                    <h2>What you can learn here</h2>
+                    <ul class="learn-list">
+                        <li>Calculus</li>
+                        <li>Linear algebra</li>
+                        <li>Statistics and probability</li>
+                        <li>Exam technique</li>
+                        <li>Calculator skills</li>
+                    </ul>
                 </div>
-                <div class="logos"> 
+                <div class="resource-grid">
+                    <article class="resource-card">
+                        <h3>Compulsory Part</h3>
+                        <p>Paper 1 written work and Paper 2 multiple choice, with year-by-year solutions.</p>
+                    </article>
+                    <article class="resource-card">
+                        <h3>M1 &amp; M2</h3>
+                        <p>Calculus &amp; statistics, or algebra &amp; calculus — notes and papers in one place.</p>
+                    </article>
+                    <article class="resource-card">
+                        <h3>Practice tools</h3>
+                        <p>Quick answer search, full-paper MC checking, and the exam countdown.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="home-panel hidden">
+                <div class="content">
+                    <p class="section-kicker">Library</p>
+                    <h2>DSE resources</h2>
+                    <ul class="learn-list">
+                        <li>DSE Compulsory Mathematics</li>
+                        <li>Mathematics Extended Module 1 (M1)</li>
+                        <li>Mathematics Extended Module 2 (M2)</li>
+                        <li>Past paper questions and solutions</li>
+                        <li>Question bank and mock papers</li>
+                        <li>Personal notes</li>
+                    </ul>
+                </div>
+                <div class="logos">
                     <div class="logo-hidden">
                         <a href="Notes_M0.html">
-                            <img src="assets/M0.png" height="100" width="auto">
+                            <img src="assets/M0.png" alt="Core mathematics notes">
                         </a>
                     </div>
                     <div class="logo-hidden">
                         <a href="Notes_M1.html">
-                            <img src="assets/M1.png" height="100" width="auto">
+                            <img src="assets/M1.png" alt="M1 notes">
                         </a>
                     </div>
                     <div class="logo-hidden">
                         <a href="Notes_M2.html">
-                            <img src="assets/M2.png" height="100" width="auto">
+                            <img src="assets/M2.png" alt="M2 notes">
                         </a>
                     </div>
                 </div>
             </section>
 
-
-            <section class="hidden">
-                <img src="assets/hkeaa.png" class="img-fluid" alt="Linear Algebra" height="350" width="45%" style="filter: brightness(170%);">
-                <div class="content">
-                    <h2>Past Public Exam Results:</h2><br>
+            <section class="home-panel hidden">
+                <img src="assets/hkeaa.png" class="img-fluid" alt="HKEAA" width="350" style="filter: brightness(170%); height: auto;">
+                <div class="content results-panel">
+                    <p class="section-kicker">Results</p>
+                    <h2>Past public exam results</h2>
                     <div class="timeline">
                         <div class="timeline-item">
                           <div class="timeline-circle"></div>
@@ -142,10 +175,15 @@
             </section>
         </main>
 
+        <footer>
+            <small>
+                "Nothing takes place in the world whose meaning is not that of some maximum or minimum."
+                    — Leonhard Euler
+            </small>
+        </footer>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
-
-

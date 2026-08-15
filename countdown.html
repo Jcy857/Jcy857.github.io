@@ -2,21 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DSE Math</title>
+        <title>HKDSE Mathematics Countdown</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
-
+    <body class="page-countdown">
         <div class="top_bar">
-            <a href="index.html" style = "color: black; text-decoration: none;">
+            <a href="index.html">
                 逸文教育中心<br>
                 Jat Man Education Centre
             </a>
-        </div>    
+        </div>
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,65 +54,47 @@
             </div>
         </nav>
 
+        <main class="countdown-page">
+            <section class="countdown-hero">
+                <p class="eyebrow">HKDSE · Mathematics Compulsory Part</p>
+                <h1 id="heroTitle">Countdown to Paper 1</h1>
+                <p class="countdown-meta" id="heroStatus">Hong Kong Time (UTC+8) · Paper 1 starts 08:30</p>
+                <p class="countdown-date" id="heroDate">Loading date…</p>
 
-        <main class="pastpaper_main">
-            <br>
-            <h2>DSE M1</h2>
-            <h3>Lesson 1</h3>
-            <div>
-                <a href="https://drive.google.com/file/d/1PIns07npyJHK5pv_VFNd9OHymftC_0ml/view?usp=drive_link" download class="download-link">Binomial Expansion</a>
-            </div>   
-            <h3>Lesson 2: </h3> 
-            <div>
-                <a href="https://drive.google.com/file/d/1Pk51z63zXTBq-NAbElhXhKjqIfeBg4iT/view?usp=drive_link" download class="download-link">Exponential and Logarithmic Functions</a>
-            </div>   
-            <h3>Lesson 3: </h3>  
-            <div>
-                <a href="https://drive.google.com/file/d/1PwuaLHhlJnB_LZaLlAdpUAqJRTu1eXhG/view?usp=drive_link" download class="download-link">Limits and Derivatives</a>
-            </div>    
-            <h3>Lesson 4-5: </h3> 
-            <div>
-                <a href="https://drive.google.com/file/d/1PrnxU7dDb5gZRlreuYVXzrhXaaOZ1GjM/view?usp=drive_link" download class="download-link">Differentiation</a>
-            </div>   
-            <h3>Lesson 6-7:</h3>  
-            <div>
-                <a href="https://drive.google.com/file/d/1531acEOIRgsv5Qontzssejaosv_MN8ZV/view?usp=drive_link" download class="download-link">Integration</a>
-            </div>   
-            <h3> Lesson 8:</h3>  
-            <div>
-                <a href="https://drive.google.com/file/d/1QSOLeevCUmyRqiadwMul27lOQcIyXMWo/view?usp=drive_link" download class="download-link">Further Probability</a>
-            </div>  
-            <h3>Lesson 9-10:</h3>   
-            <div>
-                <a href="https://drive.google.com/file/d/1R27Vl85rnQTll1SoXc2FhBbVnngDgoMd/view?usp=drive_link" download class="download-link">Discrete Probability Distributions</a>
-            </div> 
-            <h3>Lesson 11: </h3>    
-            <div>
-                <a href="https://drive.google.com/file/d/1zMzSXsAUwbruBVh-a0BWRLZaky53C3wy/view?usp=drive_link" download class="download-link">Normal Distributions</a>
-            </div>   
-            <h3>Lesson 12: </h3>  
-            <div>
-                <a href="https://drive.google.com/file/d/1pLLAOMSu_j6_WNq_Vwj4agqk5j7Bi2Ve/view?usp=drive_link" download class="download-link">Point and Interval Estimation</a>
-            </div>
-            <br>
-            <br>
-            <h2>Question Bank</h2>
-            <div>
-                <a href="https://drive.google.com/drive/folders/1Rtrp3pjMYyj5D5QeUYNtEv2KKQgV_Yhs?usp=drive_link">M1 Question Bank</a>
-            </div>   
+                <div class="countdown-clock" aria-live="polite">
+                    <div class="time-unit">
+                        <span class="num" id="cdDays">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="num" id="cdHours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="num" id="cdMinutes">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="num" id="cdSeconds">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+                <div class="year-switcher" id="yearSwitcher"></div>
+            </section>
 
+            <div class="year-grid" id="yearGrid"></div>
         </main>
-    
+
         <footer>
             <small>
-                "Nothing takes place in the world whose meaning is not that of some maximum or minimum."
-                    — Leonhard Euler
+                Confirm dates on the
+                <a href="https://www.hkeaa.edu.hk/en/hkdse/admin/exam_timetable/" target="_blank" rel="noopener noreferrer" style="color:#6ad6f2;">HKEAA examination timetable</a>.
             </small>
         </footer>
+
+        <script src="countdown.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
-
-
